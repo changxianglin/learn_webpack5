@@ -1,6 +1,12 @@
 import generateJoke from "./generatejoke";
 import './styles/main.scss'
+import laughing from './assets/laughing.svg'
 
-console.log(generateJoke())
+const laughImg = document.getElementById('laughImg')
+laughImg.src = laughing
 
-console.log(123)
+const jokeBtn = document.getElementById('jokeBtn')
+jokeBtn.addEventListener('click', generateJoke)
+
+
+generateJoke()
